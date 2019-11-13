@@ -1,0 +1,42 @@
+body{
+    background-color: lightgrey;
+}
+.navig{
+    background-color: darkblue;
+}
+.display-1{
+    font-weight: bold;
+    padding-left: 10%;
+    font-family:"Arial";
+}
+.main{
+    
+    width: 85%;
+    height: 40%;
+    margin:-4% 10% 0% 7%;
+}
+img{
+    margin: 30px;
+    border-radius: 50%;
+}
+.shahrukh{
+    padding:00px 00px 00px 45px;
+}
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+    display: flex;
+  }
+.jumb .jumbotron{
+    border-radius: 00px;
+    color: white;
+}
+.main .jumbotron{
+    border-radius: 00px;
+}
+.jumb .jumbotron .grid_system .row .col-sm-6 .jumbotron{
+
+      margin:00% 14% 00% 28%;
+
+}
