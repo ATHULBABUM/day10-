@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>AddBooks</title>
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/index.css">
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/jquery-3.4.1.js"></script>
+</head>
+
+<body>
+    <div class="navig">
+        <nav class="navbar navbar-expand-sm">
+               <div class="grid_system">
+                     <div class="row">                      
+                        <%for( var i=0;i<nav.length;i++){%>
+                            <div class="col-sm-2"><a class="nav-link text-white" href="<%=nav[i].link%>"><b><%=nav[i].title%></b></a></div>           
+                        <%}%>
+                   </div>
+               </div>              
+         </nav>
+    </div>
+    <div class="jumb">
+            <div class="jumbotron" style="background-color: rgb(0, 0, 65);" >
+                <div class="grid_system">
+                    <div class="row">
+                        <div class="col-sm-6"> <div class="display-1"> <b><%=title%></b></div></div>
+                        <div class="col-sm-6"><div class="jumbotron" style="background-color:darkblue;"></div> </div> 
+                    </div>
+                </div>               
+           </div>
+    </div>
+    <div class="main">
+           <div class="jumbotron" style="background-color: white;"><br>
+                <div class="form-group">
+                        <div class="display-2 text-success" style="text-align: center;"><b>Add Books</b></div><br><br>
+
+                    <form class="my-form" action="/books/save" method="post">
+                              
+                           <div class="formgroup row">
+                                <label for="title" class="col-sm-2 col-form-label">Title :</label>
+                                <div class="col-sm-10" >
+                                <input type="text" class="form-control" name="title" id="title" placeholder="title" required></div>
+                           </div><br>
+                           <div class="formgroup row">
+                                <label for="author" class="col-sm-2 col-form-label">author :</label>
+                                <div class="col-sm-10" >
+                                <input type="text" class="form-control" name="author" id="author" placeholder="author" required></div>
+                           </div><br>
+                           <div class="formgroup row">
+                                <label for="genre" class="col-sm-2 col-form-label">genre :</label>
+                                <div class="col-sm-10" >
+                                <input type="text" class="form-control" name="genre" id="author" placeholder="genre" required></div>
+                          </div><br>
+                          <div class="formgroup row">
+                                <label for="author" class="col-sm-2 col-form-label">image name:</label>
+                                <div class="col-sm-10" >
+                               <input type="text" class="form-control" name="image" id="author" placeholder="image name" required></div>
+                          </div><br>                             
+                          <div class="form-group row">   
+                               <div class="col-sm-2"></div>
+                               <div class="col-sm-10">
+                                  <button type="submit" class="btn btn-secondary"><b>Sign Up</b></button>                                           
+                          </div>
+                          </div>   
+                    </form>
+               </div>  
+         </div>
+    </div>  
+</body>
+</html>

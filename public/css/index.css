@@ -17,11 +17,11 @@ body{
 }
 img{
     margin: 30px;
-    border-radius: 50%;
+    border-radius: 65%;
 }
 .shahrukh{
-    padding:00px 00px 00px 45px;
-}
+    padding:00px 00px 00px 450px;
+} 
 .row::after {
     content: "";
     clear: both;

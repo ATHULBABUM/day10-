@@ -1,5 +1,5 @@
 {
-  "name": "libraryapp",
+  "name": "library",
   "version": "1.0.0",
   "description": "library app",
   "main": "index.js",
@@ -9,9 +9,21 @@
   "author": "Athul",
   "license": "ISC",
   "dependencies": {
+    "body-parser": "^1.19.0",
     "chalk": "^3.0.0",
     "cholk": "0.0.6",
+    "cors": "^2.8.5",
     "ejs": "^2.7.1",
-    "express": "^4.17.1"
-  }
+    "express": "^4.17.1",
+    "nodemon": "^1.19.4"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ATHULBABUM/day10-.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ATHULBABUM/day10-/issues"
+  },
+  "homepage": "https://github.com/ATHULBABUM/day10-#readme"
 }
